@@ -13,9 +13,9 @@ def decode_message(message):
         decoded_message += item[index:] + item[:index] + " "
     return decoded_message
 
-try:
-    while True:
-        choice = input("1. Encode 2. Decode 3.Exit")
+while True:
+    try:
+        choice = int(input("1. Encode 2. Decode 3.Exit:"))
         if choice == 1:
             user_input = list(input("Enter the message:").split())
             print(encode_message(user_input))
@@ -25,9 +25,10 @@ try:
             break
         else:
             print("Invalid choice")
-except:
-    print("Invalid value entered, please enter correctly")
-else:
-    continue
+    except:
+        print("Invalid value entered, please enter correctly")
+    else:
+        continue
+
 
 
