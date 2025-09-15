@@ -22,7 +22,7 @@ while True:
         elif choice == 2:
             print(decode_message(list(encode_message(user_input).split())))
         elif choice == 3:
-            print("Program exits!!)
+            print("Program exits!!")
             break
         else:
             print("Invalid choice")
@@ -30,6 +30,7 @@ while True:
         print("Invalid value entered, please enter correctly")
     else:
         continue
+
 
 
 
